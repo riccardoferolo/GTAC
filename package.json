@@ -1,0 +1,8 @@
+{
+  "name": "gtacerano-server",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": { "start": "node server/server.js" },
+  "dependencies": { "qrcode": "^1.5.4", "ws": "^8.21.3" }
+}
