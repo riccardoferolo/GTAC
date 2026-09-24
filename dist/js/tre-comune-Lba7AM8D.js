@@ -1,4 +1,4 @@
-import{al as rl}from"./index-CD7AQUN3.js";/**
+import{al as rl}from"./index-DYHDRp_k.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
