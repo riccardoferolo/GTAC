@@ -194,6 +194,27 @@ const SPRITE_CASCHETTO = [
   '..KKKK..KKKK..',
 ];
 
+const SPRITE_RICCIO = [
+  '..K.KK.KK.K...',
+  '.KRKRRKRRKRK..',
+  'KRRRRRRRRRRRK.',
+  'KRRRRRRRRRRRK.',
+  'KRKSSSSSSSKRK.',
+  '.KSSKSSSSKSK..',
+  '.KRSSSSSSSSRK.',
+  '..KKSSSSSSK...',
+  '..KBBBBBBBBK..',
+  '.KSBBBBBBBBSK.',
+  '.KSBBBWWBBBSK.',
+  '.KKBBBBBBBBKK.',
+  '..KBBBBBBBBK..',
+  '..KNNNNNNNNK..',
+  '..KNNNKKNNNK..',
+  '..KNNK..KNNK..',
+  '..KDDK..KDDK..',
+  '..KKKK..KKKK..',
+];
+
 const BASE_COLORI = { K: '#221e26', W: '#fafafa', S: '#facea4', N: '#282c40', D: '#6e4628' };
 
 export const PERSONAGGI = Object.freeze([
@@ -224,6 +245,7 @@ export const COMPARSE = Object.freeze([
   { id: 'portiere-trecate', nome: 'Portiere', sprite: SPRITE_BASE, colori: { R: '#5a3a22', B: '#2ab84a', W: '#2ab84a', N: '#1a1a1e' } },
   { id: 'vigile', nome: 'Vigile', sprite: SPRITE_BASE, colori: { R: '#f4f4f0', B: '#2a3a5a', W: '#1a8a4a', N: '#1a1a2a', D: '#141414' } },
   { id: 'arbitro', nome: 'Arbitro', sprite: SPRITE_CALVO, colori: { R: '#3a3a3a', B: '#1a1a1e', N: '#1a1a1e', D: '#1a1a1e' } },
+  { id: 'feno', nome: 'Feno', sprite: SPRITE_RICCIO, colori: { R: '#f0c848', B: '#5a6a3a', W: '#3a4a2a', N: '#4a3a2a', D: '#3a2414' } },
   { id: 'jim', nome: 'Jim Belushi', sprite: SPRITE_BASE, colori: { R: '#4a3222', B: '#3a6ab0', W: '#e8e0d0', N: '#2a2a34' } },
   { id: 'lanciere', nome: 'Uomo con la lancia', sprite: SPRITE_BARBA, colori: { R: '#3a2414', B: '#facea4', W: '#facea4', N: '#6a4a2a' } },
   { id: 'mussolini-corpo', nome: 'Benito Mussolini', sprite: SPRITE_SOLO_CORPO, colori: { B: '#1a1a1e', G: '#6a4a2a', N: '#4a4a3a', D: '#141414' } },
