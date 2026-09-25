@@ -2,7 +2,7 @@ import { personaggioValido } from '../web/grafica/omino.js';
 
 export const MAX_GIOCATORI = 16;
 export const LUNGHEZZA_MASSIMA_NOME = 16;
-export const LUOGHI = Object.freeze(['fuori', 'dentro', 'bocce', 'sarpom', 'edicola', 'trasferta', 'chiesa', 'vetri', 'viale', 'biblioteca', 'kebab', 'segreti', 'bellotti', 'arco', 'tasso', 'cena', 'ferragosto', 'casetta', 'hotel', 'parrucchiere']);
+export const LUOGHI = Object.freeze(['fuori', 'dentro', 'bocce', 'sarpom', 'edicola', 'trasferta', 'chiesa', 'vetri', 'viale', 'biblioteca', 'kebab', 'segreti', 'bellotti', 'arco', 'tasso', 'cena', 'ferragosto', 'casetta', 'hotel', 'parrucchiere', 'ballata']);
 export const EVENTI = Object.freeze(['bomba', 'nucleare', 'giro-chiamata', 'giro-iscritto', 'giro-arrivo']);
 export const MEZZI = Object.freeze(['vespa', 'kisbee', 'aerox', 'repsol', 'ape']);
 export const TEMPO_MASSIMO_GIRO = 3600;
