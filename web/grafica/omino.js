@@ -460,6 +460,8 @@ export const COMPARSE = Object.freeze([
   { id: 'nico', nome: 'Nico', sprite: SPRITE_BASE, colori: { R: '#f4d86a', W: '#f4d86a', B: '#2a7ad8', N: '#d8c8a0', D: '#5a3a22' } },
   { id: 'pool', nome: 'Pool', sprite: SPRITE_RADO, colori: { R: '#3a2a1e', W: '#ffffff', B: '#e0782a', N: '#2a2a3a' } },
   { id: 'vicino', nome: 'Vicino', sprite: SPRITE_BARBA, colori: { R: '#1a1410', B: '#e8e8e0', N: '#3a3a4a' } },
+  { id: 'patrizia', nome: 'Patrizia', sprite: SPRITE_CAPELLI_LUNGHI, colori: { R: '#7a4a24', B: '#c85a8a', N: '#2a2a40', S: '#eec0a0' } },
+  { id: 'angelo', nome: 'Angelo', sprite: SPRITE_CALVO, colori: { R: '#9a9a9a', B: '#3a5a8a', N: '#2a2a30' } },
   { id: 'manuel-coltello', nome: 'Manu', sprite: SPRITE_COLTELLO, colori: { R: '#e8c060', B: '#d82a2a', N: '#3a5a9a', L: '#c8d0da', H: '#6a4424', M: '#6a1a1a' } },
   { id: 'dunde', nome: 'Dunde', sprite: SPRITE_DUNDE, colori: { R: '#f4d25a', B: '#2a9a5a', W: '#f4f0e0', N: '#34406a' } },
   { id: 'dunde-pelato', nome: 'Dunde', sprite: SPRITE_DUNDE_PELATO, colori: { W: '#fff8e0', B: '#2a9a5a', N: '#34406a' } },
