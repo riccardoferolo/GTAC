@@ -1,4 +1,4 @@
-import{ax as rh}from"./index-CYTYG4bp.js";/**
+import{ax as rh}from"./index-KCogNke0.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
