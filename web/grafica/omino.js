@@ -386,6 +386,31 @@ const SPRITE_NONNA_OCCHIALI = [
   '..KKKK..KKKK.C',
 ];
 
+const SPRITE_LELE = [
+  '....KKKKKK....',
+  '...KRRRRRRK...',
+  '..KRRRRRRRRK..',
+  '..KRSSSSSSRK..',
+  '..KSSSSSSSSK..',
+  '..KSKSSSSKSK..',
+  '..KSSSSSSSSK..',
+  '...KSRRRRSK...',
+  '....KSTTSK....',
+  '..KSBBBBBBSK..',
+  '.KSTBBBBBBTSK.',
+  '.KTSBBWWBBSTK.',
+  '.KSTBBBBBBTSK.',
+  '.KTSBBBBBBSTK.',
+  '.KSKBBBBBBKSK.',
+  '..KNNNNNNNNK..',
+  '..KNNNNNNNNK..',
+  '..KNNNKKNNNK..',
+  '..KNNK..KNNK..',
+  '..KNNK..KNNK..',
+  '..KDDK..KDDK..',
+  '..KKKK..KKKK..',
+];
+
 const BASE_COLORI = { K: '#221e26', W: '#fafafa', S: '#facea4', N: '#282c40', D: '#6e4628' };
 
 export const PERSONAGGI = Object.freeze([
@@ -438,6 +463,7 @@ export const COMPARSE = Object.freeze([
   { id: 'manuel-coltello', nome: 'Manu', sprite: SPRITE_COLTELLO, colori: { R: '#e8c060', B: '#d82a2a', N: '#3a5a9a', L: '#c8d0da', H: '#6a4424', M: '#6a1a1a' } },
   { id: 'dunde', nome: 'Dunde', sprite: SPRITE_DUNDE, colori: { R: '#f4d25a', B: '#2a9a5a', W: '#f4f0e0', N: '#34406a' } },
   { id: 'dunde-pelato', nome: 'Dunde', sprite: SPRITE_DUNDE_PELATO, colori: { W: '#fff8e0', B: '#2a9a5a', N: '#34406a' } },
+  { id: 'lele', nome: 'Lele', sprite: SPRITE_LELE, pixelQuadrati: true, colori: { R: '#1a1410', S: '#e2b48c', T: '#2a3a5a', B: '#121216', W: '#d8d8d8', N: '#2e4a78', D: '#1a1a1a' } },
   { id: 'signora-rossa', nome: 'Wanda', sprite: SPRITE_CAPELLI_LUNGHI, colori: { R: '#d8281a', B: '#e03a8a', W: '#ffd23c', N: '#1a1a1e', D: '#d82a2a', S: '#f0c8a8' } },
   { id: 'signora-bianca', nome: 'Ernesta', sprite: SPRITE_NONNA, colori: { R: '#f4f4f0', B: '#6a4a8a', W: '#d8c8e8', N: '#4a3a5a', S: '#eec0a0' } },
   { id: 'signora-carrozzina', nome: 'Pierina', sprite: SPRITE_NONNA, colori: { R: '#b8b8b8', B: '#3a7a5a', W: '#e8e0c8', N: '#8a6a4a', S: '#e8b898' } },
