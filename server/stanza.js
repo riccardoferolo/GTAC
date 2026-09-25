@@ -1,4 +1,4 @@
-import { PERSONAGGI } from '../web/grafica/omino.js';
+import { personaggioValido } from '../web/grafica/omino.js';
 
 export const MAX_GIOCATORI = 16;
 export const LUNGHEZZA_MASSIMA_NOME = 16;
@@ -16,7 +16,7 @@ export function entra(stanza, messaggio) {
   if (nome.length === 0 || nome.length > LUNGHEZZA_MASSIMA_NOME || !NOME_VALIDO.test(nome)) {
     return { errore: `Il nome deve avere da 1 a ${LUNGHEZZA_MASSIMA_NOME} caratteri fra lettere, numeri e spazi.` };
   }
-  if (!PERSONAGGI.some((p) => p.id === messaggio.personaggio)) return { errore: 'Personaggio sconosciuto.' };
+  if (!personaggioValido(messaggio.personaggio)) return { errore: 'Personaggio sconosciuto.' };
   if (stanza.giocatori.size >= MAX_GIOCATORI) return { errore: `Cerano è piena: massimo ${MAX_GIOCATORI} giocatori.` };
   const minuscolo = nome.toLowerCase();
   if ([...stanza.giocatori.values()].some((g) => g.nome.toLowerCase() === minuscolo)) {

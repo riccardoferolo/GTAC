@@ -1,3 +1,5 @@
+import { decodificaAspetto, componiFigura } from './creatore.js';
+
 const SPRITE_BASE = [
   '....KKKKKK....',
   '...KRRRRRRK...',
@@ -279,6 +281,27 @@ const SPRITE_COLTELLO = [
   '..KKKK..KKKK........',
 ];
 
+const SPRITE_GIOVANNUZZO = [
+  '..............',
+  '...KKKKKKKK...',
+  '..KCCCCCCCCK..',
+  '.KCCCCCCCCCCKK',
+  '..KSSSSSSSSK..',
+  '..KSKSSSSKSK..',
+  '..KSRRRRRRSK..',
+  '...KSSSSSSK...',
+  '..KBWBBBBWBK..',
+  '.KSBWBBBBWBSK.',
+  '.KSBWBBBBWBSK.',
+  '.KKBWBBBBWBKK.',
+  '..KBWBBBBWBK..',
+  '..KNNNNNNNNK..',
+  '..KNNNKKNNNK..',
+  '..KNNK..KNNK..',
+  '..KDDK..KDDK..',
+  '..KKKK..KKKK..',
+];
+
 const BASE_COLORI = { K: '#221e26', W: '#fafafa', S: '#facea4', N: '#282c40', D: '#6e4628' };
 
 export const PERSONAGGI = Object.freeze([
@@ -329,18 +352,34 @@ export const COMPARSE = Object.freeze([
   { id: 'pool', nome: 'Pool', sprite: SPRITE_RADO, colori: { R: '#3a2a1e', W: '#ffffff', B: '#e0782a', N: '#2a2a3a' } },
   { id: 'vicino', nome: 'Vicino', sprite: SPRITE_BARBA, colori: { R: '#1a1410', B: '#e8e8e0', N: '#3a3a4a' } },
   { id: 'manuel-coltello', nome: 'Manu', sprite: SPRITE_COLTELLO, colori: { R: '#e8c060', B: '#d82a2a', N: '#3a5a9a', L: '#c8d0da', H: '#6a4424', M: '#6a1a1a' } },
+  { id: 'giovannuzzo', nome: 'Giovannuzzo', sprite: SPRITE_GIOVANNUZZO, colori: { C: '#5a4a3a', R: '#b8b8b0', B: '#f0ece0', W: '#3a3a44', N: '#4a4a3a', D: '#3a2a1a', S: '#e8b888' } },
   { id: 'jim', nome: 'Jim Belushi', sprite: SPRITE_BASE, colori: { R: '#4a3222', B: '#3a6ab0', W: '#e8e0d0', N: '#2a2a34' } },
   { id: 'lanciere', nome: 'Uomo con la lancia', sprite: SPRITE_BARBA, colori: { R: '#3a2414', B: '#facea4', W: '#facea4', N: '#6a4a2a' } },
   { id: 'mussolini-corpo', nome: 'Benito Mussolini', sprite: SPRITE_SOLO_CORPO, colori: { B: '#1a1a1e', G: '#6a4a2a', N: '#4a4a3a', D: '#141414' } },
   { id: 'mussolini', nome: 'Benito Mussolini', sprite: SPRITE_MASCELLA, colori: { B: '#1a1a1e', G: '#6a4a2a', N: '#4a4a3a', D: '#141414' } },
 ]);
 
+const figurePersonalizzate = new Map();
+
+function figuraPersonalizzata(id) {
+  if (figurePersonalizzate.has(id)) return figurePersonalizzate.get(id);
+  const aspetto = decodificaAspetto(id);
+  const figura = aspetto ? componiFigura(aspetto) : null;
+  if (figurePersonalizzate.size > 200) figurePersonalizzate.clear();
+  figurePersonalizzate.set(id, figura);
+  return figura;
+}
+
+export function personaggioValido(id) {
+  return PERSONAGGI.some((p) => p.id === id) || figuraPersonalizzata(id) !== null;
+}
+
 export function trovaPersonaggio(id) {
-  return PERSONAGGI.find((p) => p.id === id) ?? PERSONAGGI[0];
+  return PERSONAGGI.find((p) => p.id === id) ?? figuraPersonalizzata(id) ?? PERSONAGGI[0];
 }
 
 function trovaFigura(id) {
-  return PERSONAGGI.find((p) => p.id === id) ?? COMPARSE.find((p) => p.id === id) ?? PERSONAGGI[0];
+  return PERSONAGGI.find((p) => p.id === id) ?? COMPARSE.find((p) => p.id === id) ?? figuraPersonalizzata(id) ?? PERSONAGGI[0];
 }
 
 export const TUNICA = Object.freeze({ B: '#6b4a2e', N: '#5a3d24', D: '#c89a6a' });
