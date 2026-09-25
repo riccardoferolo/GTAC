@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { WebSocketServer } from 'ws';
 import QRCode from 'qrcode';
 import { indirizziRete } from './rete.js';
-import { creaStanza, entra, aggiornaPosizione, esci, eventoValido, istantanea } from './stanza.js';
+import { creaStanza, entra, aggiornaPosizione, esci, eventoValido, datiEvento, istantanea } from './stanza.js';
 
 const RADICE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CARTELLA_STATICA = join(RADICE, 'dist');
@@ -104,7 +104,7 @@ wss.on('connection', (socket) => {
     if (messaggio?.t === 'posizione') aggiornaPosizione(stanza, socket.idGiocatore, messaggio);
     else if (messaggio?.t === 'evento' && eventoValido(messaggio)) {
       const autore = stanza.giocatori.get(socket.idGiocatore);
-      aTutti({ t: 'evento', tipo: messaggio.tipo, da: socket.idGiocatore, nome: autore?.nome ?? '' });
+      aTutti({ t: 'evento', tipo: messaggio.tipo, da: socket.idGiocatore, nome: autore?.nome ?? '', ...datiEvento(messaggio) });
     }
   });
   socket.on('close', () => {
