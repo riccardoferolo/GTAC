@@ -284,6 +284,8 @@ export const COMPARSE = Object.freeze([
   { id: 'tipa8', nome: 'Ragazza', sprite: SPRITE_CAPELLI_LUNGHI, colori: { R: '#d8a060', B: '#3a8ae0', N: '#2a2030' } },
   { id: 'tipa9', nome: 'Ragazza', sprite: SPRITE_CAPELLI_LUNGHI, colori: { R: '#6a2a4a', B: '#f0a0c0', N: '#2a2a3a' } },
   { id: 'nico', nome: 'Nico', sprite: SPRITE_BASE, colori: { R: '#f4d86a', W: '#f4d86a', B: '#2a7ad8', N: '#d8c8a0', D: '#5a3a22' } },
+  { id: 'pool', nome: 'Pool', sprite: SPRITE_BASE, colori: { R: '#1a1a1a', W: '#1a1a1a', B: '#e0782a', N: '#2a2a3a' } },
+  { id: 'vicino', nome: 'Vicino', sprite: SPRITE_BARBA, colori: { R: '#1a1410', B: '#e8e8e0', N: '#3a3a4a' } },
   { id: 'jim', nome: 'Jim Belushi', sprite: SPRITE_BASE, colori: { R: '#4a3222', B: '#3a6ab0', W: '#e8e0d0', N: '#2a2a34' } },
   { id: 'lanciere', nome: 'Uomo con la lancia', sprite: SPRITE_BARBA, colori: { R: '#3a2414', B: '#facea4', W: '#facea4', N: '#6a4a2a' } },
   { id: 'mussolini-corpo', nome: 'Benito Mussolini', sprite: SPRITE_SOLO_CORPO, colori: { B: '#1a1a1e', G: '#6a4a2a', N: '#4a4a3a', D: '#141414' } },
