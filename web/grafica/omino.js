@@ -258,6 +258,27 @@ const SPRITE_RADO = [
   '..KKKK..KKKK..',
 ];
 
+const SPRITE_COLTELLO = [
+  '....KKKKKK......KK..',
+  '...KRRRRRRK....KLLK.',
+  '..KRRRRRRRRK...KLWK.',
+  '..KWWWWWWWWKK..KLWK.',
+  '..KSKKSSKKSK...KLWK.',
+  '..KSSKSSKSSK...KLWK.',
+  '..KSSSSSSSSK...KLWK.',
+  '...KSMMMMSK...KKKKKK',
+  '..KBBBBBBBBK...KHHK.',
+  '.KSBBBBBBBBSK..KHHK.',
+  '.KSBBBWWBBBBBBKSSSK.',
+  '.KKBBBBBBBBKKKKSSSK.',
+  '..KBBBBBBBBK...KKKK.',
+  '..KNNNNNNNNK........',
+  '..KNNNKKNNNK........',
+  '..KNNK..KNNK........',
+  '..KDDK..KDDK........',
+  '..KKKK..KKKK........',
+];
+
 const BASE_COLORI = { K: '#221e26', W: '#fafafa', S: '#facea4', N: '#282c40', D: '#6e4628' };
 
 export const PERSONAGGI = Object.freeze([
@@ -307,6 +328,7 @@ export const COMPARSE = Object.freeze([
   { id: 'nico', nome: 'Nico', sprite: SPRITE_BASE, colori: { R: '#f4d86a', W: '#f4d86a', B: '#2a7ad8', N: '#d8c8a0', D: '#5a3a22' } },
   { id: 'pool', nome: 'Pool', sprite: SPRITE_RADO, colori: { R: '#3a2a1e', W: '#ffffff', B: '#e0782a', N: '#2a2a3a' } },
   { id: 'vicino', nome: 'Vicino', sprite: SPRITE_BARBA, colori: { R: '#1a1410', B: '#e8e8e0', N: '#3a3a4a' } },
+  { id: 'manuel-coltello', nome: 'Manu', sprite: SPRITE_COLTELLO, colori: { R: '#e8c060', B: '#d82a2a', N: '#3a5a9a', L: '#c8d0da', H: '#6a4424', M: '#6a1a1a' } },
   { id: 'jim', nome: 'Jim Belushi', sprite: SPRITE_BASE, colori: { R: '#4a3222', B: '#3a6ab0', W: '#e8e0d0', N: '#2a2a34' } },
   { id: 'lanciere', nome: 'Uomo con la lancia', sprite: SPRITE_BARBA, colori: { R: '#3a2414', B: '#facea4', W: '#facea4', N: '#6a4a2a' } },
   { id: 'mussolini-corpo', nome: 'Benito Mussolini', sprite: SPRITE_SOLO_CORPO, colori: { B: '#1a1a1e', G: '#6a4a2a', N: '#4a4a3a', D: '#141414' } },
