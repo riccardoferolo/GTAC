@@ -2,61 +2,61 @@
  {
   "tipo": "fuel",
   "nome": "Tamoil",
-  "x": 615.3597244839464,
-  "y": 503.27089675646283
+  "x": 615.3685146346095,
+  "y": 503.274810383757
  },
  {
   "tipo": "clinic",
   "nome": "Casa della Salute",
-  "x": 595.7512750818577,
-  "y": 764.0532509582149
+  "x": 595.7583979315134,
+  "y": 764.0564222552736
  },
  {
   "tipo": "place_of_worship",
   "nome": "Grotta di Lourdes",
-  "x": 659.6298186054876,
-  "y": 715.3474670581585
+  "x": 659.6362124451069,
+  "y": 715.350313779037
  },
  {
   "tipo": "place_of_worship",
   "nome": "Oratorio di San Rocco",
-  "x": 660.7205211001512,
-  "y": 723.403750608755
+  "x": 660.7268341210561,
+  "y": 723.4065613468235
  },
  {
   "tipo": "place_of_worship",
   "nome": "Oratorio di San Giorgio",
-  "x": 522.5640212958826,
-  "y": 925.1250872654704
+  "x": 522.571169603618,
+  "y": 925.1282698971963
  },
  {
   "tipo": "place_of_worship",
   "nome": "Chiesa di San Pietro",
-  "x": 904.660795075473,
-  "y": 901.2271275230044
+  "x": 904.661525409905,
+  "y": 901.2274526889142
  },
  {
   "tipo": "place_of_worship",
   "nome": "Chiesa parrocchiale della natività di Maria vergine",
-  "x": 686.8388190432584,
-  "y": 867.3854727621306
+  "x": 686.8435732031646,
+  "y": 867.3875894505661
  },
  {
   "tipo": "place_of_worship",
   "nome": "Oratorio dell'Annunciazione di Maria Vergine",
-  "x": 665.8985168915086,
-  "y": 1010.75309908188
+  "x": 665.902529985824,
+  "y": 1010.7548858266568
  },
  {
   "tipo": "townhall",
   "nome": "Municipio di Cerano",
-  "x": 673.0664355486846,
-  "y": 845.7179730737179
+  "x": 673.0715943450466,
+  "y": 845.7202699179106
  },
  {
   "tipo": "place_of_worship",
   "nome": "Chiesa di San Martino",
-  "x": 478.84697831642546,
-  "y": 965.8026418479435
+  "x": 478.8545690447331,
+  "y": 965.8060214579992
  }
 ]
