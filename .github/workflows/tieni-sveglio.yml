@@ -1,0 +1,30 @@
+name: Tieni sveglio il database
+
+on:
+  schedule:
+    - cron: '17 6 */2 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sveglia:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chiama il database di Supabase
+        run: |
+          curl -fsS --retry 3 --retry-delay 20 -X POST "https://dxqmblsmawdtqhtekfnf.supabase.co/rest/v1/rpc/gtac_classifica" \
+            -H "apikey: sb_publishable_mjj5GumFWTwYleVvkV4pcw_tibE8HUI" \
+            -H "Content-Type: application/json" \
+            -d '{}' > /dev/null
+      - name: Segna che il progetto è vivo
+        run: |
+          git init -q sveglia
+          cd sveglia
+          git config user.name "sveglia-gtac"
+          git config user.email "sveglia-gtac@users.noreply.github.com"
+          date -u > ultima-sveglia.txt
+          git add ultima-sveglia.txt
+          git commit -qm "Sveglia del $(date -u +%F)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:sveglia
