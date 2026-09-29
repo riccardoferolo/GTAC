@@ -1,4 +1,4 @@
-import{bi as mh}from"./index-lGPVIfQD.js";/**
+import{bi as mh}from"./index-BbwlsRrU.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
