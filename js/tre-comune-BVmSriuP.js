@@ -1,4 +1,4 @@
-import{b3 as mh}from"./index-BvFisVVt.js";/**
+import{b3 as mh}from"./index-DPONtQgX.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
